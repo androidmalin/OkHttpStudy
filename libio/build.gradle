@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+
+dependencies {
+    //1.15.0
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+    implementation 'org.codehaus.mojo:animal-sniffer-annotations:1.17'
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

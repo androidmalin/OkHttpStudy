@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+
+dependencies {
+    //okhttp/3.12.1
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.60'
+    implementation 'org.conscrypt:conscrypt-openjdk-uber:1.4.0'
+    implementation 'org.codehaus.mojo:animal-sniffer-annotations:1.17'
+    implementation 'com.google.android:android:4.1.1.4'
+    implementation project(':libio')
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
